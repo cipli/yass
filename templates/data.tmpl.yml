@@ -1,0 +1,49 @@
+# A concept is made of three parts. The concept here is an app.
+# meta - {explain}
+# traits - {explain}
+# data - {explain} in this evernote clone "nugget"s are the only valid things
+concept:
+  meta:
+    "@context":
+      # http://schema.org will be used as default vocabulary
+      "@vocab": "http://schema.org/"
+      # "description" uses markdown format
+      "description":
+        "@id": "http://schema.org/description"
+        "@type": "iana:text/markdown"
+    # "@id" is the URI used to identify and retrieve the Concept. Here we use
+    "@id": "http://nugget.app"
+    # Use "@type" to link the concept's type. If the concept is already
+    # defined elsewhere, like a http://schema.org/PostalAddress then
+    # use that here as "@type" instead. Otherwise, link to the URI
+    "@type": "@id"
+    name: nugget
+    # Links to content that is "similar"
+    seeAlso:
+      - http://evernote.com
+
+  traits:
+    - "" # container?
+
+  data:
+    # The nugget's schema is defined implicitely. Each instance can define
+    # different properties and therefore have a different "shape".
+    # For example, This nugget instance doesn't includes a "url"
+    # property in its schema.
+    - nugget:
+        name:
+          EditorConfig
+        description: |
+          EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.
+        date:
+          2017-01-20T22:55:07+01:00
+    # This nugget instance *does* include a "url" property
+    - nugget:
+        name:
+          Monad papers
+        description: |
+          a collection of scientific articles about and introducing the concept of 'monads' in functional programming languages
+        date:
+          Fr, 20 Jan 2017 22:56:26 +0100
+        url:
+          - http://homepages.inf.ed.ac.uk/wadler/topics/monads.html

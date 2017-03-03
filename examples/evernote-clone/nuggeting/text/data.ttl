@@ -1,0 +1,39 @@
+@prefix : <http://company.example/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core# .
+@prefix dct: <http://purl.org/dc/terms/ .
+
+<:nuggeting>
+  a skos:conceptScheme ;
+  skos:prefLabel "nuggeting"
+  dct:title "A simple evernote clone" ;
+  dct:creator <http://cip.li/people/stefano#me> ;
+  dct:license <http://creativecommons.org/licenses/by-sa/4.0>
+  .
+
+<:nugget/1>
+  a :nugget ;
+  schema:name "OSLC3 blog post" ;
+  schema:description "bietet Übersicht für OSLC3 an"@de ;
+  schema:dateModified "2016-12-05T11:28:52+01:00"^^xsd:dateTime ;
+  schema:url "https://jazz.net/blog/index.php/2016/03/14/oslc3-update-what-is-it-how-is-it-different-and-why-is-it-important/"
+  .
+
+<:nugget/2>
+  a :nugget ;
+  schema:name "dwbp" ;
+  schema:description "Data on the web best practices" ;
+  schema:dateModified "2016-12-15T13:28:51+01:00"^^xsd:dateTime ;
+  schema:url "http://www.w3.org/TR/dwbp/#bib-Tabular-Data-Primer" ;
+  rdfs:seeAlso (_:"tabular data primer", _:"dwbp use cases")
+  .
+
+<:nugget/3>
+  a :nugget ;
+  schema:name "EditorConfig" ;
+  schema:description "EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs" ;
+  schema:dateModified "2016-12-15T11:28:52+01:00"^^xsd:dateTime ;
+  schema:url "http://editorconfig.org"
+  .

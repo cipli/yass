@@ -1,0 +1,5 @@
+http://schema.org/name,http://schema.org/description,http://schema.org/dateModified,http://schema.org/url,http://www.w3.org/2000/01/rdf-schema#
+EditorConfig,EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.,2016-12-15T11:28:52+01:00,http://editorconfig.org,
+dwbp,blog post,2016-12-15T13:29:32+01:00,http://blog.ezyang.com/2011/11/how-to-read-haskell,tabular data primer
+dwbp,blog post,2016-12-15T13:29:32+01:00,http://blog.ezyang.com/2011/11/how-to-read-haskell,dwbp use cases
+OSLC3 blog post,bietet Übersicht für OSLC3 an,2016-12-05T11:28:52+01:00,https://jazz.net/blog/index.php/2016/03/14/oslc3-update-what-is-it-how-is-it-different-and-why-is-it-important/,

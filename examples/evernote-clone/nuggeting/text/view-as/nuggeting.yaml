@@ -1,0 +1,41 @@
+---
+name:
+  OSLC3 blog post
+description:
+  "@value":
+    bietet Übersicht für OSLC3 an
+  "@language":
+    de_DE
+dateModified:
+  2016-12-05T11:28:52+01:00
+url:
+  https://jazz.net/blog/index.php/2016/03/14/oslc3-update-what-is-it-how-is-it-different-and-why-is-it-important/
+
+---
+name:
+  EditorConfig
+description:
+  EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.
+date:
+  2016-12-15T11:28:52+01:00
+url:
+  http://editorconfig.org
+
+---
+name:
+  dwbp
+description:
+  Data on the web best practices
+date:
+  2016-12-15T13:29:32+01:00
+url:
+  http://www.w3.org/TR/dwbp/#bib-Tabular-Data-Primer
+"rdfs:seeAlso":
+  - tabular data primer
+  - dwbp use cases
+---
+
+"@context": {
+  "@vocab": "http://schema.org",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+}

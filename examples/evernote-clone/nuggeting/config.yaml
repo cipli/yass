@@ -1,0 +1,36 @@
+# Basic meta information like version, app name, etc.
+meta:
+  version:
+    0.1.0
+  name:
+    nuggeting
+  id:
+    "{{.name}}.{{.domain}}"
+  description:
+    A simple evernote clone
+  domain:
+    app.cip.li
+  author:
+    Stefano Da Ros <sdaros@cip.li>
+  license:
+    MIT
+
+# Information relevant to app deployment
+deployment:
+  stage:
+    - raw:
+        persistence:
+          file:
+            - "data.yml"
+    - sheet:
+        persistence:
+          file:
+            - "data.jsonld"
+            - "data.csv"
+          db:
+            - sqlite3: "data.sqlite3"
+    - www:
+        persistence:
+          db:
+            - sqlite3: "./data.sqlite3"
+            - mongodb: "mongo://localhost:2031"
